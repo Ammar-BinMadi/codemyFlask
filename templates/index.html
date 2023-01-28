@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+    <h1> Hello world!! </h1>
+<body>
+
+    <p> First web of {{first_name}} </p>
+
+    <p>{{stuff | title }}</p>
+
+    <h3>fav pizza</h3>
+    {% for topping in pizza%}
+        {% if topping == 44 %}
+            {{topping + 100}}<br>
+        {% else %}
+            {{ topping }}<br>
+        {% endif %}
+    {% endfor %}
+
+</body>
+</html>
